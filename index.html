@@ -1,44 +1,131 @@
 <!doctype html>
 <html lang="ru">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Самые популярные игры в Steam</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="2.html">Самые популярные игры в Steam</a><br>
-                <a href="table.html">Таблица</a>
-            </nav>
-            <hr>
-        </header>
-        <p>
-            <a href="cs.html"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1749053861" width="200"></a>
-            <a href="dota.html"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1757000652" width="200"></a>
-            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1758255634" width="200">
-            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2507950/cea88d74c3fd2cd872e83dab8be8b7557ae9dc48/header.jpg?t=1758592879" width="200">
-            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1754692865" width="200">
-        </p>
-        <hr>
-        <h3>
-            <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/d/db/Counter-strike_2.jpg/330px-Counter-strike_2.jpg" height="200" align="middle">
-            Counter Strike 2
-        </h3>
-        <p>Counter-Strike 2 — игровой титан, главный тактический шутер современности, построенный на абсолютно новом движке.</p>
-        <p>Игра отличается крупными техническими улучшениями по сравнению с Global Offensive, включая переход с игрового движка Source на Source 2, улучшенную графику и новую клиент-серверную архитектуру. Кроме того, многие карты из Global Offensive были обновлены, чтобы использовать функции Source 2, а некоторые карты были полностью переработаны.</p>
-        <p>Valve анонсировала игру 22 марта 2023 года, объявив, что разработчики готовят релиз на лето 2023 года. Релиз игры состоялся 27 сентября 2023 года, заменив собою Global Offensive в Steam.</p>
-        <h3>
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/31/Dota_2_Steam_artwork.jpg/250px-Dota_2_Steam_artwork.jpg" height="200" align="middle">
-            Dota 2
-        </h3>
-        <p>Разработка игры началась в 2009 году, когда компания Valve приняла на работу основного разработчика DotA — IceFrog, а летом 2010 года подала заявку на регистрацию этой торговой марки. 13 октября 2010 года на игровом портале Game Informer игра была анонсирована к выходу в 2011 году. 15 августа 2011 года в официальном блоге был опубликован трейлер к игре. Dota 2 вышла в июле 2013 года после того, как два года находилась в стадии бета-тестирования.</p>
-        <p>Изначально Dota 2 была выпущена на игровом движке Source, после чего в 2015 году была портирована на Source 2, став первой работающей на нём игрой. В Dota 2 предусмотрена возможность создавать пользовательские режимы игры, оформление карты и косметические предметы для героев, после чего добавить их в Dota 2 при помощи Steam Workshop. Dota 2 является одной из наиболее популярных игр в Steam и получила в целом положительные отзывы критиков за игровой процесс, качество производства и сохранение положительных сторон своей предшественницы. Среди основных недостатков игры была отмечена сложность обучения</p>
-        <footer>
-            <hr>
-            Грибов Егор
-        </footer>
+        <div class="container">
+            <div class="header">
+                <a href="index.html" class="header-link selected">Самые популярные игры в Steam</a>
+                <a href="table.html" class="header-link">Таблица</a>
+            </div>
+            <div class="content-wrap">
+                <div class="top-block">
+                    <div class="wide">
+                        <img class="img-fit" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1749053861" alt="">
+                    </div>
+                    <div class="center-block">
+                        <div class="center-top-row">
+                            <div class="small-img">
+                                <img class="img-fit" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1757000652" alt="">
+                            </div>
+                            <div class="small-img">
+                                <img class="img-fit" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1758255634" alt="">
+                            </div>
+                        </div>
+                        <div class="center-bottom-wide">
+                            <img class="img-fit" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2507950/cea88d74c3fd2cd872e83dab8be8b7557ae9dc48/header.jpg?t=1758592879" alt="">
+                        </div>
+                    </div>
+                    <div class="wide">
+                        <img class="img-fit" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1754692865" alt="">
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="main">
+                        <div class="box">
+                            <h2>Counter-Strike 2</h2>
+                            <div class="col text-col">
+                                Counter-Strike 2 — игровой титан, главный тактический шутер современности, построенный на абсолютно новом движке.
+                                Valve анонсировала игру 22 марта 2023 года, объявив, что разработчики готовят релиз на лето 2023 года. Релиз игры состоялся 27 сентября 2023 года, заменив собою Global Offensive в Steam.
+                            </div>
+                            <div class="col text-col">
+                                Игра отличается крупными техническими улучшениями по сравнению с Global Offensive, включая переход с игрового движка Source на Source 2, улучшенную графику и новую клиент-серверную архитектуру. Кроме того, многие карты из Global Offensive были обновлены, чтобы использовать функции Source 2, а некоторые карты были полностью переработаны.
+                                <div class="more-wrapper">
+                                    <a class="more-btn" href="cs.html">Подробнее »</a>
+                                </div>
+                            </div>
+                            <div class="col image-col">
+                                <img class="img-fit" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1749053861" alt="CS2">
+                            </div>
+                        </div>
+                        <div class="below">
+                            <h2 class="below-title">Dota 2</h2>
+                            <div class="left-img">
+                                <img class="img-fit" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1757000652" alt="Dota2">
+                            </div>
+                            <div class="right-text">
+                                Разработка игры началась в 2009 году, когда компания Valve приняла на работу основного разработчика DotA — IceFrog, а летом 2010 года подала заявку на регистрацию этой торговой марки. 13 октября 2010 года на игровом портале Game Informer игра была анонсирована к выходу в 2011 году. 15 августа 2011 года в официальном блоге был опубликован трейлер к игре. Dota 2 вышла в июле 2013 года после того, как два года находилась в стадии бета-тестирования.
+                                <div class="more-wrapper align-left">
+                                    <a class="more-btn" href="dota.html">Подробнее »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sb-item">
+                            <div class="sb-content">
+                                <h3 class="sb-title">PUBG</h3>
+                                <div class="sb-text">
+                                    PUBG: Battlegrounds — многопользовательская онлайн-игра в жанре королевской битвы, разрабатываемая и издаваемая студией PUBG Corporation.
+                                    <div class="more-wrapper">
+                                        <a class="more-btn" href="#">Подробнее »</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sb-circle">
+                                <img class="img-circle" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1758255634" alt="">
+                            </div>
+                        </div>
+                        <div class="sb-item">
+                            <div class="sb-circle">
+                                <img class="img-circle" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2507950/cea88d74c3fd2cd872e83dab8be8b7557ae9dc48/header.jpg?t=1758592879" alt="">
+                            </div>
+                            <div class="sb-content">
+                                <h3 class="sb-title">Delta Force</h3>
+                                <div class="sb-text">
+                                    Delta Force — компьютерная игра в жанре шутера от первого лица, разработанная TiMi J3 Studio, подразделением TiMi Studio Group на движке Unreal Engine 5.
+                                    <div class="more-wrapper">
+                                        <a class="more-btn" href="#">Подробнее »</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sb-item">
+                            <div class="sb-content">
+                                <h3 class="sb-title">Stardew Valley</h3>
+                                <div class="sb-text">
+                                    Stardew Valley — компьютерная игра в жанре симулятора жизни фермера с элементами ролевой игры, разработанная геймдизайнером Эриком Барони и изданная Chucklefish Games для Windows в 2016 году.
+                                    <div class="more-wrapper">
+                                        <a class="more-btn" href="#">Подробнее »</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sb-circle">
+                                <img class="img-circle" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1754692865" alt="">
+                            </div>
+                        </div>
+                        <div class="sb-item">
+                            <div class="sb-circle">
+                                <img class="img-circle" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/6ae90b012e725a93622c3694d9d866b886cfd0f8/header.jpg?t=1762457261" alt="">
+                            </div>
+                            <div class="sb-content">
+                                <h3 class="sb-title">Apex Legends</h3>
+                                <div class="sb-text">
+                                    Apex Legends — компьютерная игра в жанре многопользовательского геройского шутера от первого лица и королевской битвы, разработанная американской студией Respawn Entertainment.
+                                    <div class="more-wrapper">
+                                        <a class="more-btn" href="#">Подробнее »</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">Грибов Егор. Б9123-02.03.03тп</div>
+        </div>
     </body>
 </html>
